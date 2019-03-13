@@ -25,9 +25,7 @@ function destructivelyRemoveFirstKitten()
 
 function appendKitten(name)
 {
-  var newKittens = kittens
-  newKittens.concat(newKittens , name)
-  return newKittens
+
 }
 
 function prependKitten(name)
@@ -42,6 +40,6 @@ function removeLastKitten()
 
 function removeFirstKitten()
 {
-  
+  return kittens.slice(1 , kittens.length)
 }
 // Add your functions and code here
